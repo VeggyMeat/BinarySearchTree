@@ -51,4 +51,11 @@ class SearchSetTest {
         set.insert(-5);
         assertEquals(4, set.getNumberElements());
     }
+
+    @Test
+    void testInsertAlreadyThere() {
+        SearchSet set = new SearchSet();
+        set.insert(1);
+        assertThrows(IllegalArgumentException.class, () -> set.insert(1));
+    }
 }

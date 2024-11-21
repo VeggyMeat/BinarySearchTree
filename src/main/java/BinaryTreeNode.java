@@ -4,30 +4,36 @@ public class BinaryTreeNode {
     private BinaryTreeNode mRight;
 
     public BinaryTreeNode(int element) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        mElement = element;
     }
 
     public int getValue() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return mElement;
     }
 
     public void setValue(int value) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        mElement = value;
     }
 
     public BinaryTreeNode getLeft() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (mLeft == null) {
+            return null;
+        }
+        return mLeft;
     }
 
     public BinaryTreeNode getRight() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (mRight == null) {
+            return null;
+        }
+        return mRight;
     }
 
     public void setRight(BinaryTreeNode right) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        mRight = right;
     }
 
     public void setLeft(BinaryTreeNode left) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        mLeft = left;
     }
 }
